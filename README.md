@@ -11,7 +11,7 @@ root/
 ├── Dockerfile                          # Docker image file
 └── app/                                # Testing app directory
     │
-    ├── configurations/                 # Shared config & driver setup
+    ├── config/                         # Shared configurations & driver setup
     │   ├── config.ini                  # Stored data (eg. passwords, api keys) - can be replaced with ENV variables
     │   └── driver_setup.py             # WebDriver fixtures
     │
