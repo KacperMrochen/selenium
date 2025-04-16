@@ -5,28 +5,30 @@ Scallable web automation framework build with Selenium, Pytest using Page Object
 ## Project structure
 
 ```
-project_root/
-│
-├── configurations/                 # Shared config & driver setup
-│   ├── config.ini                  # Stored data (eg. passwords, api keys) - can be replaced with ENV variables
-│   └── driver_setup.py             # WebDriver fixtures
-│
-├── logs/                           # Log files
-│   └── tests.log                   # Saved logs
-│
-├── reports/                        # Captures
-│   ├── screenshots                 # Webdriver screenshots
-│   └── videos                      # Webdriver videos
-│
-├── pages/                          # Page Object Model classes
-│   ├── BasePage.py                 # Common utilities (switching tabs, element awaits)
-│   └── HomePage.py                 # Page specific utilities (page locators, action methods)
-│
-├── tests/                          # Test cases
-│   ├── test_home.py                # Main page example test
-│   └── conftest.py                 # Delegates to driver_setup
-│
-└── README.md                       # Project documentation
+root/
+├── README.md                           # Project documentation
+├── requirements.txt                    # Required dependencies
+├── Dockerfile                          # Docker image file
+└── app/                                # Testing app directory
+    │
+    ├── configurations/                 # Shared config & driver setup
+    │   ├── config.ini                  # Stored data (eg. passwords, api keys) - can be replaced with ENV variables
+    │   └── driver_setup.py             # WebDriver fixtures
+    │
+    ├── logs/                           # Log files
+    │   └── tests.log                   # Saved logs
+    │
+    ├── reports/                        # Captures
+    │   ├── screenshots                 # Webdriver screenshots
+    │   └── videos                      # Webdriver videos
+    │
+    ├── pages/                          # Page Object Model classes
+    │   ├── BasePage.py                 # Common utilities (switching tabs, element awaits)
+    │   └── HomePage.py                 # Page specific utilities (page locators, action methods)
+    │
+    └── tests/                          # Test cases
+        ├── test_home.py                # Main page example test
+        └── conftest.py                 # Delegates to driver_setup
 ```
 
 ## Installation
