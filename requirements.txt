@@ -1,0 +1,7 @@
+py
+pytest
+chromedriver_autoinstaller
+pytest-selenium
+pytest-html
+pytest-xdist
+Allure-pytest
