@@ -4,6 +4,7 @@ Scallable web automation framework build with Selenium, Pytest using Page Object
 
 ## Project structure
 
+```
 project_root/
 │
 ├── configurations/                 # Shared config & driver setup
@@ -26,6 +27,7 @@ project_root/
 │   └── conftest.py                 # Delegates to driver_setup
 │
 └── README.md                       # Project documentation
+```
 
 ## Installation
 
